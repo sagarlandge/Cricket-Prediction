@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial;
+  color: blue;
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+  background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/b/be/Flag_of_England.svg/1280px-Flag_of_England.svg.png");
+  background-size: cover;
+  background-position: center;
+  /* filter: blur(3px); */
+}
+
+.right {
+  right: 0;
+  background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1200px-Flag_of_India.svg.png");
+  background-size: cover;
+  background-position: center;
+  /* filter: blur(3px); */
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/opacity/see-through */
+  color: rgb(255, 255, 255);
+}
+
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="split left">
+  <div class="centered">
+    <!-- <img src="img_avatar2.png" alt="Avatar woman"> -->
+    <h1>Strategy for team England</h1>
+    <p>Jasprit Bumrah, YS Chahal, Kuldeep Yadav, B Kumar have very good record. <b>England batsmen should play them safely!!</b></p>
+    <p>RA Jadeja (INDIA),Mohammed Shami (INDIA),HH Pandya (INDIA),have decent record. <b>England batsmen should look to play them normally and try to attack lose deliveries!!</b></p>
+    <p>No indian bowlers have <b>poor record.</b></p>
+
+  </div>
+</div>
+
+<div class="split right">
+  <div class="centered">
+    <!-- <img src="img_avatar.png" alt="Avatar man"> -->
+    <h1>Strategy for team India</h1>
+    <p>MM Ali (ENG),AU Rashid (ENG),CR Woakes (ENG),have very good record. <b>Indian batsmen should play them safely!!</b></p>
+    <p>BA Stokes (ENG),LE Plunkett (ENG),MA Wood (ENG),have decent record. <b>Indian batsmen should look to play them normally and try to attack lose deliveries!!<b></p>
+    <p>JC Archer (ENG),TK Curran (ENG),have poor record. <b>Indian batsmen should try to attack these bowlers and score as many runs as possible!!</b></p>
+  </div>
+</div>
+
+</body>
+</html>

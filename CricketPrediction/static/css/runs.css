@@ -1,0 +1,87 @@
+body, html {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    }
+    
+    .bg-text {
+      background-color: rgb(0, 0, 0); /* Fallback color */
+      background-color: rgba(0, 0, 0, 0.7); /* Black w/opacity/see-through */
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+      border: 3px solid #f1f1f1;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-30%);
+      /* z-index: 2; */
+      width: 80%;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .bg-img {
+    /*The image used*/
+    background-image: url("stadium4.jpg");
+    height:100%;
+    width: 100%;
+    
+    /* my changes 27 june sagar */
+    /* background-attachment: fixed; */
+    
+    
+    /* Center and scale the image nicely*/
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    background-repeat: repeat;
+    
+    background-size: cover;
+    /* position: relative; */
+    background-attachment: fixed;
+    
+    }
+    
+    /* Position text in the middle of the page/image */
+    .bg-text {
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.7); /* Black w/opacity/see-through */
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-30%);
+    /* z-index: 2; */
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    }
+    
+    /*.container {
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    max-width: 300px;
+    padding: 16px;
+    background-color: white;
+    }
+    
+    
+    ::-webkit-scrollbar {
+    width: 20px;
+    }
+    ::-webkit-scrollbar-thumb {
+    background: #888;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    }
+    */
+    
+    
+    
+    

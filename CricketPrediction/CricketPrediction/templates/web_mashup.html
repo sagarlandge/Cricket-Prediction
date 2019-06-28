@@ -1,0 +1,45 @@
+{% load static %}
+
+<html>
+   <head>
+      <meta content = "text/html; charset = ISO-8859-1" http-equiv = "content-type">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+      <script src="{% static 'js/web-mashup.js' %}" ></script>
+      <link href="{% static 'css/web-mashup.css' %}" rel="stylesheet">
+
+      <title>Cricket prediction</title>
+   </head>
+
+   <script>
+    $(function(){
+          $("#chkbtn").on('click',function() {
+              $(this).hide();
+              $("#hidden-div").show();
+          }); 
+      });
+ </script>
+
+   <body>
+      <div class="bg-img"></div>
+        <div class="bg-text" id = "hidden-div">
+          <h1>Upcoming ODI matches</h1>
+            <!-- <label>Press the button to get Upcoming matches</label> -->
+            <!-- <input type="text" id="location"> -->
+
+
+            <div class = "central">
+                <button type = "button" onclick = "loadLocation()" id="chkbtn"> Show Upcoming Matches </button>
+            </div>
+            <!-- <p id="Upcoming"></p> -->
+
+            <div id="myDiv" class="scrollit">
+              <!-- <button id="hey">Select</button> -->
+            </div>
+  
+
+
+        </div>
+
+
+   </body>
+</html>

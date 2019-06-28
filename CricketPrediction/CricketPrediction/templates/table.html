@@ -1,0 +1,186 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- <script type = "application/javascript" src="table_java.js" ></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <!-- <script type = "application/javascript" src="web-mashup.js" ></script> -->
+  <script src="{% static 'js/web-mashup.js' %}" ></script>
+  <!-- <link href="table.css" rel="stylesheet">= -->
+
+  <link href="{% static 'css/table.css' %}" rel="stylesheet">
+
+</head>
+
+<script>
+  $(function(){
+            $("#chkbtn1").on('click',function() {
+                $(this).hide();
+                $("#hidden-div1").show();
+            });
+            
+            $("#chkbtn2").on('click',function() {
+                $(this).hide();
+                $("#hidden-div2").show();
+            });
+
+            $("#chkbtn3").on('click',function() {
+                $(this).hide();
+                $("#hidden-div3").show();
+            });
+        });
+</script>
+
+
+<body>
+
+  <!-- <a  href="{% url 'web_mashup' %}">
+    <button type="button" class="btn btn-primary" id="login_button"  value="click here" >Login</button>
+  </a> -->
+  
+<!-- india table -->
+  <div class="bg-img"></div>
+  <div class="bg-text">
+  <table style="display:none" id= "India">  
+      
+    <tr><th>Indian Player Name</th></tr>
+    <tr><td><a style="text-decoration: none; color:white;"  href="{% url 'viratScore' %}" >Virat Kohli</a></td></tr>
+    <tr><td><a style="text-decoration: none; color:white;"  href="{% url 'rohitScore' %}" >Rohit Sharma</a></td></tr>
+    <tr><td><a style="text-decoration: none; color:white;" href="{% url 'bumrahScore' %}" >Jasprit Bumrah</a></td></tr>
+    <tr><td><a style="text-decoration: none; color:white;" href="{% url 'chahalScore' %}" >Yuzvendra Chahal</a></td></tr>
+    <tr><td><a style="text-decoration: none; color:white;" href="{% url 'dhoniScore' %}" >MS Dhoni</a></td></tr>
+    <tr><td>Ravindra Jadeja</td></tr>
+    <tr><td>Kedar Jadhav</td></tr>
+    <tr><td>Dinesh Karthik</td></tr>
+    <tr><td>Kuldeep Yadav</td></tr>
+    <tr><td>Bhuvneshwar Kumar</td></tr>
+    <tr><td>Mohammed Shami</td></tr>
+    <tr><td>Hardik Pandya</td></tr>
+    <tr><td>Rishabh Pant</td></tr>
+    <tr><td>KL Rahul</td></tr>
+    <tr><td>Vijay Shankar</td></tr>
+    <tr><td>Shikhar Dhawan</td></tr>
+  </table>
+
+  <!-- england table -->
+  <table style="display:none" id= "England">
+    <tr>
+      <th>England Player Name</th>
+    </tr>
+    <tr><td><a style="text-decoration: none; color:white;" href="{% url 'stokesScore' %}" >Ben Stokes</a></td></tr>
+    <tr><td><a style="text-decoration: none; color:white;" href="{% url 'jasonRoy' %}" >Jason Roy</a></td></tr>
+    <tr><td>Moeen Ali</td></tr>
+    <tr><td>Jofra Archer</td></tr>
+    <tr><td>Jonny Bairstow</td></tr>
+    <tr><td>Jos Buttler</td></tr>
+    <tr><td>Tom Curran</td></tr>
+    <tr><td>Liam Dawson</td></tr>
+    <tr><td>Liam Plunkett</td></tr>
+    <tr><td>Adil Rashid</td></tr>
+    <tr><td>Joe Root</td></tr>
+    <tr><td>Eoin Morgan</td></tr>
+    <tr><td>James Vince</td></tr>
+    <tr><td>Chris Woakes</td></tr>
+    <tr><td>Mark Wood</td></tr>
+    <tr><td>Joe Denly</td></tr>
+  </table>
+
+  <!-- england table -->
+  <table style="display:none" id= "Pakistan">
+    <tr><th>Pakistan Player Name</th></tr>
+    <tr><td>Sarfaraz Ahmed</td></tr>
+    <tr><td>Asif Ali</td></tr>
+    <tr><td>Babar Azam</td></tr>
+    <tr><td>Fakhar Zaman</td></tr>
+    <tr><td>Haris Sohail</td></tr>
+    <tr><td>Hasan Ali</td></tr>
+    <tr><td>Imad Wasim</td></tr>
+    <tr><td>Imam-ul-Haq</td></tr>
+    <tr><td>Mohammad Amir</td></tr>
+    <tr><td>Mohammad Hafeez</td></tr>
+    <tr><td>Mohammad Hasnain</td></tr>
+    <tr><td>Shadab Khan</td></tr>
+    <tr><td>Shaheen Afridi</td>
+      <tr><td>Shoaib Malik</td></tr>
+      <tr><td>Wahab Riaz</td></tr>
+      <tr><td>Abid Ali</td></tr>
+      <tr><td>Faheem Ashraf</td></tr>
+      <tr><td>Junaid Khan</td></tr>
+
+  </table>
+
+
+  <!-- england table -->
+  <table style="display:none" id= "Bangladesh">
+    <tr><th>Bangladesh Player Name</th></tr>
+    <tr><td>Mashrafe Mortaza</td></tr>
+    <tr><td>Abu Jayed</td></tr>
+    <tr><td>Liton Das</td></tr>
+    <tr><td>Mahmudullah</td></tr>
+    <tr><td>Mehidy Hasan</td></tr>
+    <tr><td>Mohammad Mithun</td></tr>
+    <tr><td>Mohammad Saifuddin</td></tr>
+    <tr><td>Mosaddek Hossain</td></tr>
+    <tr><td>Mushfiqur Rahim</td></tr>
+    <tr><td>Mustafizur Rahman</td></tr>
+    <tr><td>Rubel Hossain</td></tr>
+    <tr><td>Sabbir Rahman</td></tr>
+    <tr><td>Shakib Al Hasan</td></tr>
+    <tr><td>Soumya Sarkar</td></tr>
+    <tr><td>Tamim Iqbal</td></tr>
+  </table>
+
+  <table style="display:none" id= "Afghanistan">
+    <tr><th>Afghanistan Player Name</th></tr>
+    <tr><td>Gulbadin Naib</td></tr>
+    <tr><td>Aftab Alam</td></tr>
+    <tr><td>Asghar Afghan</td></tr>
+    <tr><td>Dawlat Zadran</td></tr>
+    <tr><td>Hamid Hassan</td></tr>
+    <tr><td>Hashmatullah Shahidi</td></tr>
+    <tr><td>Hazratullah Zazai</td></tr>
+    <tr><td>Ikram Alikhil</td></tr>
+    <tr><td>Mohammad Nabi</td></tr>
+    <tr><td>Mujeeb Ur Rahman</td></tr>
+    <tr><td>Najibullah Zadran</td></tr>
+    <tr><td>Noor Ali Zadran</td></tr>
+    <tr><td>Rahmat Shah</td></tr>
+    <tr><td>Rashid Khan</td></tr>
+    <tr><td>Samiullah Shinwari</td></tr>
+    <tr><td>Mohammad Shahzad</td></tr>
+    <tr><td>Karim Janat</td></tr>
+    <tr><td>Sayed Shirzad</td></tr>
+  </table>
+
+
+    <div id="hidden-div1">
+      <button  onclick="showTable()" style="display:toggle;" id="chkbtn1">Show Team Players for Performance</button>
+    </div>
+    <br>
+
+
+    <div id="hidden-div2">
+        <!-- <button  onclick="showTable()" style="display:toggle;" id="chkbtn2">Winning Predictions</button> -->
+        <button style="display:toggle;"> <a style="text-decoration: none; color:black;" href="{% url 'winningIndia' %}" >Winning Predictions</a></button>
+    </div>
+
+
+<!-- working -->
+    <br>
+    <div id="hidden-div3">
+      <a href="{% url 'strategy' %}"><button style="display:toggle;" id="chkbtn3">Show Strategies</button> </a>
+    </div>
+  </div>
+
+
+
+  <!-- <a  href="{% url 'strategy' %}">
+    
+    </a> --> 
+     <!-- working for button -->
+
+
+
+
+</body>
+</html>

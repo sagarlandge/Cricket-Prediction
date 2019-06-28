@@ -1,0 +1,129 @@
+body, html {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+.bg-img {
+    /*The image used*/
+    background-image: url("stadium4.jpg");
+      height:100%;
+      width: 100%;
+      filter: blur(3px);
+  
+    /* Center and scale the image nicely*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* position: relative; */
+    background-attachment: fixed;    /* my chanage sagar */
+
+  }
+
+  /* Position text in the middle of the page/image */
+  .bg-text {
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.7); /* Black w/opacity/see-through */
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    width: 60%;
+    padding: 20px;
+    text-align: center;
+  }
+
+/*.container {
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    max-width: 300px;
+    padding: 16px;
+    background-color: white;
+  }
+
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+*/
+
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+
+  .btn {
+    background-color: rgb(39, 184, 252);
+    color: black;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  button{
+      background-color: rgb(117, 193, 228);
+      color: black;
+      padding: 16px 20px;
+      border:rgb(0, 0, 0);
+      cursor: pointer;
+      width: 50%;
+      height: 10%;
+      opacity: 0.9;
+  }
+
+  td{
+    height: 30px;
+    width: 200px;
+    text-align: center;
+    border: 2px solid white;
+    font-size: 14px;
+    color: white
+  }
+  tbody{
+    overflow:scroll;
+    height:80px;
+    width:100%;
+    overflow:auto
+  }
+.btn:hover {
+    opacity: 1;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+table {
+    overflow:scroll;
+    height:100px;
+}
+
+.hide{
+    display:none;
+    }
+    
+    .show{
+    display:block;
+    }
